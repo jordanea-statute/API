@@ -9,6 +9,11 @@
             "id":2,
             "descricao" : "Sapatilha",
             "preco": "29,90"
+        },
+        {
+            "id":3,
+            "descricao" : "chinelo",
+            "preco": "49,90"
         }
     ]
 }

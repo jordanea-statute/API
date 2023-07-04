@@ -20,13 +20,15 @@
             .then(resposta => resposta.json())
             .then(resposta => {
                 
-                for(let i = 0; i < 2; i++){
+                for(let i = 0; i < 3; i++){
 
-                    let linha = `<p>${resposta[i].id}</p>`;
-                    linha += `<p>${resposta[i].descricao}</p>`;
-                    linha += `<p>${resposta[i].preco}</p>`;
+                    let linha = `<li>${resposta[i].id}</li>`;
+                    linha += `<li>${resposta[i].descricao}</li>`;
+                    linha += `<li>${resposta[i].preco}</li>`;
 
-                    document.querySelector(`#resposta`).innerHTML = linha;
+                    const ul = document.createElement("ul");
+
+                    document.querySelector(`#resposta`).appendChild(ul).innerHTML = linha;
 
                 }
         });
