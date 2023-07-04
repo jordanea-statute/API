@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisição e Respostas via API</title>
+</head>
+<body>
+<header>
+    <h1>Requisição e Respostas via API</h1>
+</header>
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        const requisicao = new Request('http://localhost:3000/produtos');
+
+        fetch(requisicao)
+            .then(resposta => resposta.json())
+            .then(resposta => {
+                
+                for(let i = 0; i < 2; i++){
+
+                    let linha = `<p>${resposta[i].id}</p>`;
+                    linha += `<p>${resposta[i].descricao}</p>`;
+                    linha += `<p>${resposta[i].preco}</p>`;
+
+                    document.querySelector(`#resposta`).innerHTML = linha;
+
+                }
+        });
+    </script>
+</body>
+</html>
