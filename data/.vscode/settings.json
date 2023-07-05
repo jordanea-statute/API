@@ -1,8 +1,10 @@
 {
-    "liveServer.settings.ignoreFiles": [
+    "liveServer.settings.ignoreFiles": [ 
         ".vscode/**",
         "**/*.scss",
         "**/*.sass",
-        "**/*.ts"
-    ]
-}
+        "**/*.ts",
+        "**/db.json", /*SERVE PARA NAO ATUALIZAR O SERVIDOR SEMPRE QUE O ARQUIVO DB.JSON FOR ATUALIZADO*/
+    ],
+    "liveServer.settings.host": "localhost"
+} 

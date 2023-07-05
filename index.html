@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requisição e Respostas via API</title>
+    <script src="./pagina.js" ></script>
 </head>
 <body>
 <header>
     <h1>Requisição e Respostas via API</h1>
 </header>
-    <div id="resposta">
+    <!-- <div id="resposta">
 
+    </div> -->
+    <div class="minhaClasseDiv">
+        <p>
+            <span></span>
+            <img id="gif"  alt="bdsfhs">
+        </p>
     </div>
+    <button type="button" id="botao">Botão</button>
 
     <script>
-        const requisicao = new Request('http://localhost:3000/produtos');
+        // const requisicao = new Request('http://localhost:3000/produtos');
 
-        fetch(requisicao)
-            .then(resposta => resposta.json())
-            .then(resposta => {
+        // fetch(requisicao)
+        //     .then(resposta => resposta.json())
+        //     .then(resposta => {
                 
-                for(let i = 0; i < 3; i++){
+        //         for(let i = 0; i < 3; i++){
 
-                    let linha = `<li>${resposta[i].id}</li>`;
-                    linha += `<li>${resposta[i].descricao}</li>`;
-                    linha += `<li>${resposta[i].preco}</li>`;
+        //             let linha = `<li>${resposta[i].id}</li>`;
+        //             linha += `<li>${resposta[i].descricao}</li>`;
+        //             linha += `<li>${resposta[i].preco}</li>`;
 
-                    const ul = document.createElement("ul");
+        //             const ul = document.createElement("ul");
 
-                    document.querySelector(`#resposta`).appendChild(ul).innerHTML = linha;
+        //             document.querySelector(`#resposta`).appendChild(ul).innerHTML = linha;
 
-                }
-        });
+        //         }
+        // });
+        document.querySelector('[type=button]').addEventListener('click',() =>{
+
+        document.querySelector("#gif").setAttribute('src','https://media.tenor.com/XWr6vfqH7WEAAAAC/tentando-n%C3%A3o-rir-risada.gif');
+        
+    });
     </script>
-</body>
+    
 </html>
