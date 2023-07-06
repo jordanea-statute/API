@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <a href="./">home</a>
+        <h1>Read com GET</h1>
+    </header>
+
+    <div class="listaProdutos"></div>
+
+    <script>
+        const Requisição = new Request('http://localhost:3000/produtos');
+
+        fetch(requisicao)
+            .then(resposta => resposta.json())
+            .then(resposta => {
+
+                for(let i = 0; i < resposta.length; i++){
+
+                    const ul = document.createElement('ul');
+                    
+                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].id;
+                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].Descricao;
+                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].Preco;
+                  
+
+
+
+                }
+                
+                document.querySelector('#listaProdutos').appendChild(ul);
+
+    });
+        
+    </script>
+
+</body>
+</html>
