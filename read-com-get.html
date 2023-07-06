@@ -12,12 +12,16 @@
         <h1>Read com GET</h1>
     </header>
 
-    <div class="listaProdutos"></div>
+    <div id="listaProdutos"></div>
 
     <script>
-        const Requisição = new Request('http://localhost:3000/produtos');
 
-        fetch(requisicao)
+        fetch('http://localhost:3000/produtos', {
+            method: 'GET', 
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
             .then(resposta => resposta.json())
             .then(resposta => {
 
@@ -26,16 +30,14 @@
                     const ul = document.createElement('ul');
                     
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].id;
-                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].Descricao;
-                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].Preco;
+                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].descricao;
+                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].preco;
                   
 
+                    document.querySelector('#listaProdutos').appendChild(ul);
 
-
-                }
+                }               
                 
-                document.querySelector('#listaProdutos').appendChild(ul);
-
     });
         
     </script>

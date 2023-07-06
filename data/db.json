@@ -1,19 +1,49 @@
 {
-    "produtos":[
-        {
-            "id":1,
-            "descricao" : "Sapato",
-            "preco": "19,90"
-        },
-        {
-            "id":2,
-            "descricao" : "Sapatilha",
-            "preco": "29,90"
-        },
-        {
-            "id":3,
-            "descricao" : "chinelo",
-            "preco": "49,90"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "Sapato",
+      "preco": "19,90"
+    },
+    {
+      "id": 2,
+      "descricao": "Sapatilha",
+      "preco": "29,90"
+    },
+    {
+      "id": 3,
+      "descricao": "chinelo",
+      "preco": "49,90"
+    },
+    {
+      "descricao": "cinto de couro",
+      "preco": "69,90",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "descricao": "Bolsa Texas",
+      "preco": "59,90"
+    },
+    {
+      "id": 6,
+      "descricao": "mochila de couro",
+      "preco": "399,00"
+    },
+    {
+      "id": 7,
+      "descricao": "case de couro black",
+      "preco": "120,00"
+    },
+    {
+      "id": 8,
+      "descricao": "case de couro preto",
+      "preco": "120,00"
+    },
+    {
+      "id": 9,
+      "descricao": "case de couro black",
+      "preco": "120,00"
+    }
+  ]
 }
