@@ -12,11 +12,11 @@
     },
     {
       "id": 3,
-      "descricao": "chinelo",
+      "descricao": "Chinelo",
       "preco": "49,90"
     },
     {
-      "descricao": "cinto de couro",
+      "descricao": "Cinto de couro",
       "preco": "69,90",
       "id": 4
     },
@@ -27,22 +27,22 @@
     },
     {
       "id": 6,
-      "descricao": "mochila de couro",
+      "descricao": "Mochila de couro",
       "preco": "399,00"
     },
     {
       "id": 7,
-      "descricao": "case de couro black",
+      "descricao": "Case de couro black",
       "preco": "120,00"
     },
     {
       "id": 8,
-      "descricao": "case de couro preto",
+      "descricao": "Case de couro preto",
       "preco": "120,00"
     },
     {
       "id": 9,
-      "descricao": "case de couro black",
+      "descricao": "Case de couro black",
       "preco": "120,00"
     }
   ]
