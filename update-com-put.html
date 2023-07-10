@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Interação com APIs | Creat com POST</title>
+    <title>Interação com APIs | Update com Put</title>
 </head>
 <body>
     
     <header>
         <a href="./">home</a>
         <a href="./read-com-get.html">Read com GET</a>
-        <h1>Creat com POST</h1>
+
+        <h1>Update com PUT</h1>
     </header>
     
     <form action="" method="post">
 
         <label for="id">ID:</label>
-        <input type="text" id="id"  disabled ><br>
+        <input type="text" id="id"><br>
 
         <label for="descricao">Descrição: </label>
         <input type="text" id="descricao" ><br>
@@ -25,7 +26,7 @@
         <label for="preco">Preço: </label>
         <input type="text" id="preco"><br>
 
-        <button type="button" id="btCadastrar">Cadastrar</button>
+        <button type="button" id="btAtualizar">Atualizar</button>
 
     </form>
 
@@ -33,16 +34,18 @@
 
     <script>
 
-        document.querySelector('#btCadastrar').addEventListener('click', () =>{
+        document.querySelector('#btAtualizar').addEventListener('click', () =>{
 
             const dados ={
-                'id': null,
+                // 'id': null,
                 'descricao': document.querySelector('#descricao').value,
                 'preco': document.querySelector('#preco').value
             }
 
-            fetch('http://localhost:3000/produtos',{
-                method: 'POST',
+            const id = document.querySelector('#id').value;
+         //ATUALIZA OS PRODUTOS   
+            fetch(`http://localhost:3000/produtos/${id}`,{ //chama o parametro com o ${}, {} chaves em ingles = curly braces
+                method: 'PUT',
                 headers: {
                     'content-type':'application/json'
                 },
@@ -50,12 +53,12 @@
             })
             .then(resposta => {
                 if(resposta.ok){
-                    alert('Produto Cadastrado');
+                    alert('Produto Atualizado');
                 }
             });
 
         });
-
+       // BUSCA OS PRODUTOS
         fetch('http://localhost:3000/produtos', {
             method: 'GET', 
             headers: {
