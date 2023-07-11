@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "id": 2,
+      "descricao": "Sapatilha",
+      "preco": "29,90"
+    },
+    {
+      "id": 3,
+      "descricao": "Chinelo",
+      "preco": "49,90"
+    },
+    {
+      "descricao": "Cinto de couro",
+      "preco": "69,90",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "descricao": "Bolsa Texas",
+      "preco": "59,90"
+    },
+    {
+      "descricao": "mochila de couro sintetico",
+      "preco": "290,00",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "descricao": "Case de couro black",
+      "preco": "120,00"
+    },
+    {
+      "id": 8,
+      "descricao": "Case de couro preto",
+      "preco": "120,00"
+    },
+    {
+      "id": 9,
+      "descricao": "Case de couro black",
+      "preco": "120,00"
+    }
+  ]
+}

@@ -8,13 +8,30 @@
 <body>
     
     <header class="page-title">
-        
         <h1>Delete com Delete</h1>
     </header>
 
     <div id="listaProdutos"></div>
 
     <script>
+
+        document.addEventListener('click', event => {
+            if(event.target.classList.contains('delete-button')){
+
+                fetch(`http://localhost:3000/produtos/${event.target.value}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-type': 'application/json'
+                    }
+                })
+                    .then(resposta => {
+                        if(resposta.ok){
+                            alert('Produto apagado!')
+                            location.reload(); //JEITO PORCAO SERA MELHORADO PROMETO!
+                        }
+                    })
+            }
+        });
 
         fetch('http://localhost:3000/produtos', {
             method: 'GET', 
@@ -37,7 +54,7 @@
                     const liDelete = document.createElement('li');
                     const btDelete = document.createElement('button');
                     btDelete.innerHTML = '❌';
-                    btDelete.classList.add = ('delete-button'); // cria classe para usar no css
+                    btDelete.classList.add('delete-button'); // cria classe para usar no css
                     // btDelete.style.color = 'red'; // da para estulizar pelo style.color
                     btDelete.value = resposta[i].id;
 
@@ -52,6 +69,7 @@
     </script>
 
     <script src="./assets/scripts/estilos.js"></script>
+    <script src="./assets/scripts/navBar.js"></script>
 
 </body>
 </html>
