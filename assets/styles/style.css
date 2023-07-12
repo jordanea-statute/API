@@ -3,7 +3,7 @@
 
 
 /******************** ESTILIZAÇÃO READ COM GET **********************/
-.page-title a{
+.page-title a {
     font-family: 'Indie Flower', cursive;
     text-decoration: none;
     font-size: 25pt;
@@ -12,7 +12,8 @@
     text-transform: uppercase;
 
 }
-.page-title h1{
+
+.page-title h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 25pt;
     display: flex;
@@ -21,7 +22,7 @@
     background-color: #567189;
     border-radius: 10px;
     height: 50px;
- 
+
 }
 
 .produto {
@@ -37,60 +38,61 @@
 
 /******************** ESTILIZAÇÃO INDEX **********************/
 
-.minhaClasseDiv{
+.minhaClasseDiv {
     display: flex;
     justify-content: center;
 }
 
-#botao{
+#botao {
     display: flex;
     margin-left: 4rem;
     border: none;
     background-color: #86A3B8;
     border-radius: 10px;
     cursor: pointer;
-  
+
 }
 
 #botao:hover {
     opacity: 0.8;
-  }
+}
 
 /******************** CREAT COM POST **********************/
 
 /******************** UPDATE COM PUT **********************/
-.box-father{
+.box-father {
     background: #FEFFE4;
     width: 100%;
     height: 1024px;
 }
 
-.box-father form{
+.box-father form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     font-family: 'Ubuntu';
-    
+
 }
 
-.page-title-Put{
+.page-title-Put {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+
+
 }
-.page-title-Put h1{
+
+.page-title-Put h1 {
     color: #000;
-    text-align: center;  
+    text-align: center;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.box-form{
+.box-form {
     border-radius: 12px;
     background: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -99,28 +101,28 @@
     display: flex;
     align-items: center;
 
-    
-    
-    
+
+
+
 }
 
-.box-form h1{
+.box-form h1 {
     color: #000;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
 }
 
-#id{
+#id {
     width: 304px;
     height: 34px;
     border-radius: 4px;
     border: 1px solid #000;
-    background: #E3E2E2; 
-    
+    background: #E3E2E2;
+
 }
 
 .label-text {
@@ -131,12 +133,14 @@
 
 }
 
-.input-placeholder{
+.input-placeholder {
     font-family: 'Ubuntu';
     font-style: italic;
-   
+
 }
-#descricao , #preco{
+
+#descricao,
+#preco {
     width: 304px;
     height: 34px;
     border-radius: 4px;
@@ -149,13 +153,20 @@
     line-height: normal;
 }
 
-
-#btAtualizar{
+.containerButton{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    
+   
+}
+#btAtualizar {
     color: #FFF;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    font-family: 'Ubuntu';
     line-height: normal;
     width: 167px;
     height: 46px;
@@ -163,18 +174,46 @@
     background: #48A4FA;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 25px;
+    border: none;
 
 }
 
-#btCancelar{
+#btCancelar {
     width: 118px;
     height: 46px;
     border-radius: 4px;
     background: #F59999;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #444;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    
+}
+
+#btAtualizar:hover {
+   background-color: #007BED;
+    
+}
+
+#btCancelar:hover{
+    background-color: #FF5F5F;  
+    
+}
+#btAtualizar:active{
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
 
 }
-.listaProdutos{
+
+#btCancelar:active{
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.listaProdutos {
     display: flex;
     width: 243px;
     height: 38px;
@@ -186,9 +225,37 @@
     line-height: normal;
 }
 
-.listaProdutos li{
+.listaProdutos h1 {
+    display: flex;
+    width: 243px;
+    height: 38px;
+    flex-direction: column;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.listaProdutos li {
     width: 1332px;
     height: 43px;
     border-bottom: 1px solid #000;
     background: #FFF;
+}
+.listaProdutos li:nth-child(odd){
+    width: 1332px;
+    height: 43px;
+    flex-shrink: 0;
+    border-bottom: 1px solid #000;
+    background: #FFF;
+
+}
+
+.listaProdutos li:nth-child(even){
+    width: 1332px;
+    height: 43px;
+    flex-shrink: 0;
+    border-bottom: 1px solid #000;
+    background: #FFF1C1;
 }
