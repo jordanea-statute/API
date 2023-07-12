@@ -70,6 +70,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    font-family: 'Ubuntu';
     
 }
 
@@ -82,8 +83,7 @@
 }
 .page-title-Put h1{
     color: #000;
-    text-align: center;
-    font-family: Ubuntu;
+    text-align: center;  
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -91,7 +91,6 @@
 }
 
 .box-form{
-    flex-shrink: 0;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -99,13 +98,15 @@
     height: 439px;
     display: flex;
     align-items: center;
-     
+
+    
+    
+    
 }
 
 .box-form h1{
     color: #000;
     text-align: center;
-    font-family: Ubuntu;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -116,49 +117,69 @@
 #id{
     width: 304px;
     height: 34px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #000;
     background: #E3E2E2; 
+    
 }
 
+.label-text {
+    display: flex;
+    align-self: flex-start;
+    padding-inline: 3rem;
+    margin: 15px;
+
+}
+
+.input-placeholder{
+    font-family: 'Ubuntu';
+    font-style: italic;
+   
+}
 #descricao , #preco{
     width: 304px;
     height: 34px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #000;
     background: #FEFFE4;
     color: #000;
-    font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.box-form button{
+
+#btAtualizar{
     color: #FFF;
     text-align: center;
-    font-family: Ubuntu;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 303px;
+    width: 167px;
     height: 46px;
-    flex-shrink: 0;
     border-radius: 4px;
     background: #48A4FA;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 25px;
+
+}
+
+#btCancelar{
+    width: 118px;
+    height: 46px;
+    border-radius: 4px;
+    background: #F59999;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 .listaProdutos{
     display: flex;
     width: 243px;
     height: 38px;
     flex-direction: column;
-    flex-shrink: 0;
     color: #000;
-    font-family: Ubuntu;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -168,7 +189,6 @@
 .listaProdutos li{
     width: 1332px;
     height: 43px;
-    flex-shrink: 0;
     border-bottom: 1px solid #000;
     background: #FFF;
 }
