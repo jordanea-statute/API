@@ -79,7 +79,6 @@
     justify-content: center;
     align-items: center;
 
-
 }
 
 .page-title-Put h1 {
@@ -120,6 +119,7 @@
     border: 1px solid #000;
     background: #E3E2E2;
     font-style: italic;
+    font-size: 16px;
 
 }
 
@@ -147,11 +147,13 @@
 }
 
 .containerButton{
+    height: 120px ;
+    width: 80%;
     display: flex;
     align-items: center;
-    width: 350px;
-    
-   
+    justify-content: space-evenly;
+
+
 }
 
 #btAtualizar {
@@ -166,8 +168,7 @@
     height: 46px;
     border-radius: 4px;
     background: #48A4FA;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 25px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25); 
     border: none;
 
 }
@@ -214,7 +215,9 @@
     margin-top: 40px;
 
 }
-
+.titleListaProdutos{
+    font-family: 'Ubuntu';
+}
 #listaProdutos {
     display: flex;
     flex-direction: column;
@@ -225,7 +228,6 @@
     font-family: 'Ubuntu';
     display: flex;
     align-items: center;
-    
     
 }
 
@@ -257,4 +259,8 @@
     display:flex;
     padding-inline: 40px;
    
+}
+
+#listaProdutos li:nth-child(2){
+    margin-right: auto;
 }
