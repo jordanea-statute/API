@@ -59,6 +59,7 @@
 
 /******************** CREAT COM POST **********************/
 
+
 /******************** UPDATE COM PUT **********************/
 .box-father {
     background: #FEFFE4;
@@ -147,6 +148,7 @@
     font-weight: 400;
     line-height: normal;
     font-style: italic;
+
 }
 
 .containerButton{
@@ -156,19 +158,18 @@
     align-items: center;
     justify-content: space-evenly;
 
-
 }
 
 #btAtualizar {
+    height: 46px;
+    width: 167px;   
     color: #FFF;
-    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     font-family: 'Ubuntu';
     line-height: normal;
-    width: 167px;
-    height: 46px;
+    text-align: center;
     border-radius: 4px;
     background: #48A4FA;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25); 
@@ -177,12 +178,12 @@
 }
 
 #btCancelar {
-    width: 118px;
     height: 46px;
+    width: 118px;
+    color: #444;
     border-radius: 4px;
     background: #F59999;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #444;
     text-align: center;
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -212,26 +213,26 @@
 }
 
 .box-product h1{
+    font-family: 'Ubuntu';
     font-size: 24px;
     font-weight: 400;
     padding-inline: 185px;
     margin: 20px;
-    font-family: 'Ubuntu';
 
 }
+
 .box-product{
     margin-top: 80px;
 }
 
 #listaProdutos {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Ubuntu';
     color: #000;
     font-size: 16pt;
     font-style: normal;
     font-weight: 400;
-    font-family: 'Ubuntu';
     display: flex;
+    flex-direction: column;
     align-items: center;
     
 }
@@ -245,6 +246,7 @@
     justify-content: space-between;
 
 }
+
 #listaProdutos ul:nth-child(odd){
     border-bottom: 1px solid #000;
     background: #FFF;
@@ -254,10 +256,7 @@
 #listaProdutos ul:nth-child(even){   
     border-bottom: 1px solid #000;
     background: #FFF1C1;
-}
 
-#listaProdutos ul{
-    display: flex;
 }
 
 #listaProdutos li{
@@ -270,4 +269,5 @@
 #listaProdutos li:nth-child(2){
     margin-right: auto;
     margin-left: 5rem;
+
 }
