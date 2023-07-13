@@ -89,6 +89,8 @@
     font-weight: 400;
     line-height: normal;
     margin: 27px;
+    font-family: 'Ubuntu';
+
 }
 
 .box-form {
@@ -126,8 +128,9 @@
 .label-text {
     display: flex;
     align-self: flex-start;
-    padding-inline: 3rem;
-    margin: 15px;
+    padding-inline: 4rem;
+    margin-top: 20px;
+    margin-bottom: 4px;
 
 }
 
@@ -209,20 +212,22 @@
 }
 
 .box-product h1{
-    font-size: 29pt;
-    font-weight: 600;
-    padding-inline: 205px;
-    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-inline: 185px;
+    margin: 20px;
+    font-family: 'Ubuntu';
 
 }
-.titleListaProdutos{
-    font-family: 'Ubuntu';
+.box-product{
+    margin-top: 80px;
 }
+
 #listaProdutos {
     display: flex;
     flex-direction: column;
     color: #000;
-    font-size: 24px;
+    font-size: 16pt;
     font-style: normal;
     font-weight: 400;
     font-family: 'Ubuntu';
@@ -258,9 +263,11 @@
 #listaProdutos li{
     display:flex;
     padding-inline: 40px;
+    font-size: 16pt;
    
 }
 
 #listaProdutos li:nth-child(2){
     margin-right: auto;
+    margin-left: 5rem;
 }
