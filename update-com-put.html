@@ -44,13 +44,30 @@
     </div>
     
     <script>
+        //DESAFIO 1- CLICK NO PRODUTO PARA PREENCHER O FORMULARIO DE ATUALIZAÇÃO AUTOMATICAMENTE.
+
+        document.querySelector('#listaProdutos').addEventListener('click', event => {
+            console.log(event.target);
+            if(event.target.closest('ul').classList.contains('produto')){
+            console.log(event.target);
+
+                const elementoBase = event.target.closest('ul');
+
+                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto ="id"]').innerHTML;
+                document.querySelector('input#descricao').value = elementoBase.querySelector('[data-produto ="descricao"]').innerHTML;
+                document.querySelector('input#preco').value = elementoBase.querySelector('[data-produto ="preco"]').innerHTML;
+
+            }
+
+        });
 
         document.querySelector('#btAtualizar').addEventListener('click', () => {
 
             const dados = {
-                // 'id': null,
+                'id': null,
                 'descricao': document.querySelector('#descricao').value,
-                'preco': document.querySelector('#preco').value
+                'preco': document.querySelector('#preco').value,
+                'atualizado':true
             }
 
             const id = document.querySelector('#id').value;
@@ -83,17 +100,38 @@
                 for (let i = 0; i < resposta.length; i++) {
 
                     const ul = document.createElement('ul');
+                    ul.classList.add('produto'); //classe criada
+                    // ul.id = resposta[i].id;
 
-                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].id;
-                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].descricao;
-                    ul.appendChild(document.createElement('li')).innerHTML = resposta[i].preco;
+                    if(resposta[i].atualizado){
+                        ul.style.color = 'blue';
+                    }
 
+                    const liId = document.createElement('li');
+                    liId.setAttribute('data-produto', 'id');
+                    liId.innerHTML = resposta[i].id;
+
+                    const liDescricao = document.createElement('li');
+                    liDescricao.setAttribute('data-produto', 'descricao');
+                    liDescricao.innerHTML = resposta[i].descricao;
+
+                    const liPreco = document.createElement('li');
+                    liPreco.setAttribute('data-produto', 'preco');
+                    liPreco.innerHTML = resposta[i].preco;
+
+                    ul.append(liId, liDescricao, liPreco)
 
                     document.querySelector('#listaProdutos').appendChild(ul);
 
                 }
 
             });
+
+            function autoComplete() {
+            const formAut = ['id, descricao, preco'].innerHTML = value;
+            return formAut;
+
+            }
 
     </script>
     <script src="./assets/scripts/estilos.js"></script>
