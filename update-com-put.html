@@ -78,13 +78,13 @@
         }
     }  
         //COMPLEMENTO DESAFIO 2: DESABILITA O BOTÃO NO RESET DO FORMULARIO
-        Document.querySelector('form').addEventListener('reset', ()=> {
+        document.querySelector('form').addEventListener('reset', ()=> {
             document.querySelector('button#btCancelar').setAttribute('disabled','');
 
         });
 
         //VERIFICA OS CAMPOS DO FORMULARIO NA DIGITAÇÃO MANUAL
-        Document.querySelector('form').addEventListener('keyup', ()=> {
+        document.querySelector('form').addEventListener('keyup', ()=> {
             verificaInputsPreenchidos();
         });
 
