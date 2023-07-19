@@ -10,6 +10,9 @@ function buscaProdutos (){
     .then(resposta => resposta.json())
     .then(resposta => {
 
+        document.querySelector('#listaProdutos').innerHTML = ''; //serve para limpar a pagina antes de carregar a atualização.
+
+
         for (let i = 0; i < resposta.length; i++) {
 
             const ul = document.createElement('ul');

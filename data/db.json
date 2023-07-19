@@ -53,6 +53,11 @@
       "descricao": "Case de couro black",
       "preco": "120,00",
       "atualizado": false
+    },
+    {
+      "id": 10,
+      "descricao": "Sapato",
+      "preco": "28,90"
     }
   ]
 }
