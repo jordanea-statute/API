@@ -203,11 +203,18 @@
     background-color: #FF5F5F;  
     
 }
+
 #btCancelar:disabled{
     cursor: not-allowed;
     background-color: #e2e0e0;
     box-shadow: none;
     
+}
+
+#btAtualizar:disabled{
+    cursor: not-allowed;
+    background-color: #e2e0e0;
+    box-shadow: none;
 }
 
 #btAtualizar:active{
