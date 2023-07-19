@@ -39,7 +39,7 @@ function verificaInputsPreenchidos() {
 
 //desafio 3 para que o botao Atualizar fique ativo apenas se o input id estiver preenchido    
     if (id){
-        document.querySelector('button#btAtualizar').removeAttribute('dissabled');
+        document.querySelector('button#btAtualizar').removeAttribute('disabled');
 
     } else {
         document.querySelector('button#btAtualizar').setAttribute('disabled','');
