@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "id": 2,
-      "descricao": "Sapatilha",
-      "preco": "32,90",
-      "atualizado": true
-    },
-    {
       "id": 3,
       "descricao": "Chinelo",
       "preco": "49,90",

@@ -1,5 +1,5 @@
 // BUSCA OS PRODUTOS
-function buscaProdutos (mostraBtDelete){ //parametro mostraBtDelete
+function buscaProdutos (mostraBtDelete = false){ //parametro mostraBtDelete
 
     fetch('http://localhost:3000/produtos', {
         method: 'GET',
@@ -22,7 +22,7 @@ function buscaProdutos (mostraBtDelete){ //parametro mostraBtDelete
             if(resposta[i].atualizado){
                 ul.style.color = 'blue';
             }
-
+    
             const liId = document.createElement('li');
             liId.setAttribute('data-produto', 'id');
             liId.innerHTML = resposta[i].id;
@@ -42,9 +42,18 @@ function buscaProdutos (mostraBtDelete){ //parametro mostraBtDelete
             const liDelete = document.createElement('li');
             const btDelete = document.createElement('button');
             btDelete.innerHTML = '❌';
+            btDelete.value = resposta[i].id;
             btDelete.classList.add('delete-button'); // cria classe para usar no css
             // btDelete.style.color = 'red'; // da para estulizar pelo style.color
-            btDelete.value = resposta[i].id;
+            
+            const liCheck = document.createElement('li');
+            const inputCheck = document.createElement('input');
+            inputCheck.setAttribute('type','checkbox');
+            inputCheck.setAttribute('id','');
+
+            liCheck.append(inputCheck);
+
+            ul.insertBefore(liCheck, liId);
 
             ul.appendChild(liDelete).appendChild(btDelete);
             //fim botão

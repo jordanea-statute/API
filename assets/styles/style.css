@@ -1,8 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap,family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap'); */
 
 
-
-/******************** ESTILIZAÇÃO READ COM GET **********************/
 .page-title a {
     font-family: 'Indie Flower', cursive;
     text-decoration: none;
@@ -276,19 +274,29 @@
 
 }
 
-#listaProdutos li{
-    display:flex;
-    padding-inline: 40px;
-    font-size: 16pt;
+#listaProdutos li:first-child{
+    margin: 0 2.4rem;
     
    
 }
 
-#listaProdutos li:nth-child(2){
-    margin-right: auto;
-    margin-left: 5rem;
-
+#listaProdutos li[data-produto="id"] {
+    margin-left: 2.4rem;
+    text-align: start;
+    width: 10rem;
 }
+
+#listaProdutos li[data-produto="descricao"] {
+    text-align: start;
+    width: 60%;
+}
+
+#listaProdutos li:last-child {
+    text-align: end;
+    width: 10rem;
+    margin-right: 2.4rem;
+}
+
 
 /******************** DELETE COM DELETE **********************/
 .box-btDeletarProdutos{
