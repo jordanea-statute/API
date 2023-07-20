@@ -289,3 +289,36 @@
     margin-left: 5rem;
 
 }
+
+/******************** DELETE COM DELETE **********************/
+.box-btDeletarProdutos{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#btDeletarProdutos{
+    height: 46px;
+    width: 250px;   
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Ubuntu';
+    line-height: normal;
+    text-align: center;
+    border-radius: 4px;
+    background: #567189;;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    border: none;
+    cursor: pointer;
+}
+
+#btDeletarProdutos:hover{
+    background-color: #007BED
+
+}
+#btDeletarProdutos:active{
+    box-shadow: 2px 2px 2px 0px rgba(228, 23, 149, 0.25) inset;
+}

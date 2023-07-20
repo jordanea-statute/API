@@ -1,5 +1,5 @@
 // BUSCA OS PRODUTOS
-function buscaProdutos (){
+function buscaProdutos (mostraBtDelete){ //parametro mostraBtDelete
 
     fetch('http://localhost:3000/produtos', {
         method: 'GET',
@@ -36,6 +36,19 @@ function buscaProdutos (){
             liPreco.innerHTML = resposta[i].preco;
 
             ul.append(liId, liDescricao, liPreco)
+
+            if (mostraBtDelete){ //parametro mostraBtDelete
+            //botão
+            const liDelete = document.createElement('li');
+            const btDelete = document.createElement('button');
+            btDelete.innerHTML = '❌';
+            btDelete.classList.add('delete-button'); // cria classe para usar no css
+            // btDelete.style.color = 'red'; // da para estulizar pelo style.color
+            btDelete.value = resposta[i].id;
+
+            ul.appendChild(liDelete).appendChild(btDelete);
+            //fim botão
+        }
 
             document.querySelector('#listaProdutos').appendChild(ul);
 

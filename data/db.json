@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "Sapato",
-      "preco": "28,90",
-      "atualizado": true
-    },
-    {
       "id": 2,
       "descricao": "Sapatilha",
       "preco": "32,90",
@@ -58,6 +52,11 @@
       "id": 10,
       "descricao": "Sapato",
       "preco": "28,90"
+    },
+    {
+      "id": 11,
+      "descricao": "sandalia azul",
+      "preco": "29,90"
     }
   ]
 }
