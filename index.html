@@ -9,11 +9,9 @@
 </head>
 <body>
     <header class="page-title">
-        <h1>Requisição e Respostas via API</h1>
+        <h1>Requisição e Respostas via API</h1>    
     </header>
-    <!-- <div id="resposta">
-
-    </div> -->
+  
     <div class="minhaClasseDiv">
         <p>
             <span></span>
@@ -22,9 +20,39 @@
     </div>
     <button type="button" id="botao">Botão</button>
 
-    <script>
+    <main>
+        <p class="style-P">No contexto do HTTP, uma requisição é um pedido feito por um cliente (como um navegador web) a
+            um servidor
+            para obter um recurso específico. Ela inclui informações como o método da requisição (por exemplo, GET,
+            POST), a URL do recurso solicitado e, opcionalmente, dados adicionais no corpo da requisição. Por outro
+            lado, uma resposta é a mensagem retornada pelo servidor em resposta a uma requisição, contendo informações
+            como o status da resposta (por exemplo, 200 para sucesso, 404 para recurso não encontrado), cabeçalhos com
+            metadados e, opcionalmente, dados no corpo da resposta, que podem ser HTML, JSON ou outros formatos,
+            dependendo do tipo de recurso solicitado.</p>
         
-    </script>
+        <p class="style-P">POST :
+            A operação POST é utilizada para enviar dados novos para o servidor e criar um novo recurso. Ao fazer uma
+            solicitação POST a uma API, você está enviando informações para serem processadas e armazenadas pelo servidor.
+            Isso pode ser usado, por exemplo, para criar um novo usuário ou enviar um formulário de envio de dados.</p>
+
+        <p class="style-P">GET :
+            A operação GET é usada para recuperar informações de um servidor. Quando você faz uma solicitação GET a uma API,
+            você está pedindo para obter dados específicos, como informações de um usuário, um produto em um catálogo ou
+            qualquer outro recurso disponível no servidor. Essa operação é somente de leitura, o que significa que não
+            altera os dados no servidor, apenas os recupera para visualização.</p>
+
+        <p class="style-P">UPDATE :
+            A operação PUT é usada para atualizar um recurso existente no servidor. Quando você faz uma solicitação PUT a
+            uma API, você está enviando dados para substituir completamente um recurso existente no servidor pelo novo
+            conjunto de dados fornecido.</p>
+
+        <p class="style-P">DELETE :
+            A operação DELETE é utilizada para remover um recurso específico do servidor. Ao fazer uma solicitação DELETE a
+            uma API, você está instruindo o servidor a remover o recurso identificado pela URL fornecida.</p>
+
+    </main>
+
+   
 
     <script src="./assets/scripts/estilos.js"></script>
     <script src="./assets/scripts/navBar.js"></script>

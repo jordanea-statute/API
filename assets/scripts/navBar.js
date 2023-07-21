@@ -1,4 +1,10 @@
 
+const boxNav = document.createElement('nav');
+boxNav.classList.add('boxNav');
+
+const boxUl = document.createElement('ul');
+boxUl.classList.add('boxUl');
+
 const home = document.createElement('a');
 home.href = './index.html';
 home.innerHTML = 'Home';
@@ -20,4 +26,9 @@ deleteDel.href = './delete-com-delete.html';
 deleteDel.innerHTML = 'Delete';
 
 
-document.querySelector('header').append(home, creatPost, readGet, updatePut, deleteDel,);
+document.querySelector('header').appendChild(boxNav).appendChild(boxUl);
+document.querySelector('ul').appendChild(document.createElement('li')).appendChild(home);
+document.querySelector('ul').appendChild(document.createElement('li')).appendChild(creatPost);
+document.querySelector('ul').appendChild(document.createElement('li')).appendChild(readGet);
+document.querySelector('ul').appendChild(document.createElement('li')).appendChild(updatePut); 
+document.querySelector('ul').appendChild(document.createElement('li')).appendChild(deleteDel); 

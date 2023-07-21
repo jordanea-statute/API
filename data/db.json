@@ -51,6 +51,11 @@
       "id": 11,
       "descricao": "sandalia azul",
       "preco": "29,90"
+    },
+    {
+      "id": 12,
+      "descricao": "tenis sport",
+      "preco": "475,90"
     }
   ]
 }

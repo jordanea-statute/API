@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap,family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap'); */
 
-
+/******************** ESTILIZAÇÃO NAVBAR **********************/
 .page-title a {
     font-family: 'Indie Flower', cursive;
     text-decoration: none;
@@ -10,6 +10,11 @@
     text-transform: uppercase;
 
 }
+
+a:hover{
+    opacity: 0.8;
+}
+
 
 .page-title h1 {
     font-family: 'Indie Flower', cursive;
@@ -23,16 +28,23 @@
 
 }
 
-.produto {
-    font-family: 'Roboto Mono', cursive;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    margin-right: 3rem;
+.page-title h1:hover{
+    opacity: 0.8;
+
 }
 
+.boxNav{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.boxUl{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/******************** FIM ESTILIZAÇÃO NAVBAR **********************/
 
 /******************** ESTILIZAÇÃO INDEX **********************/
 
@@ -48,14 +60,63 @@
     background-color: #86A3B8;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 #botao:hover {
     opacity: 0.8;
 }
+/******************** FIM ESTILIZAÇÃO INDEX **********************/
 
-/******************** CREAT COM POST **********************/
+/******************** CREATE COM POST **********************/
+.boxFormPost{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.boxFormPost label{
+    margin-left: 2rem;
+}
+
+.boxBtCadastrar{
+    display: flex;
+    justify-content: end;
+    margin-right: 14rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+
+#btCadastrar{
+    height: 46px;
+    width: 250px;   
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Ubuntu';
+    line-height: normal;
+    text-align: center;
+    border-radius: 4px;
+    background: #567189;;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+#btCadastrar:hover{
+    background-color: #007BED;
+
+}
+
+
 
 
 /******************** UPDATE COM PUT **********************/
@@ -73,25 +134,6 @@
 
 }
 
-.page-title-Put {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.page-title-Put h1 {
-    color: #000;
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 27px;
-    font-family: 'Ubuntu';
-
-}
-
 .box-form {
     border-radius: 12px;
     background: #FFF;
@@ -100,6 +142,7 @@
     height: 439px;
     display: flex;
     align-items: center;
+
 
 }
 
@@ -259,6 +302,7 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    
 
 }
 
@@ -297,6 +341,7 @@
     margin-right: 2.4rem;
 }
 
+/******************** FIM UPDATE COM PUT **********************/
 
 /******************** DELETE COM DELETE **********************/
 .box-btDeletarProdutos{
