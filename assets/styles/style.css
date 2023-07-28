@@ -65,6 +65,13 @@ a:hover{
 #botao:hover {
     opacity: 0.8;
 }
+
+.style-P{
+    font-family: 'Indie Flower', cursive;
+    font-size: 14pt;
+    margin: 2rem;
+
+}
 /******************** FIM ESTILIZAÇÃO INDEX **********************/
 
 /******************** CREATE COM POST **********************/
